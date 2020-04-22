@@ -1,16 +1,16 @@
 <?php
 
-    class Cliente  {
+    class Cliente  { 
         private $nome;
         private $cpf;
 
-        function __construct($nome, $cpf)  {
-            $this->nome = $nome;
-            $this->cpf = $cpf;
+        function __construct($nome, $cpf)  { 
+            $this->nome = $nome; // nome do Cliente
+            $this->cpf = $cpf; // número do CPF do Cliente
         }
 
-        function obterNome()  {
-            return $this->nome;
+        function obterNome()  { // obtem-se o nome 
+            return $this->nome; // retorna o nome desse
         }
 
     }
