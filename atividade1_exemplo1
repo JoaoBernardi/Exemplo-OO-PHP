@@ -1,0 +1,15 @@
+<?php
+    include 'class/Conta.php';
+
+    $objetoConta = new Conta(); // Instanciação da classe Conta
+    
+    $saldo = $objetoConta->obterSaldo(); // obtém o saldo da conta
+
+    echo 'Saldo da conta é R$ '. $saldo . '<br>'; // dá o saldo da conta
+
+    echo 'Depósito de R$ 100' . '<br>'; // recebe uma informação de que foi depositado R$100
+    $objetoConta->depositar(100);
+
+    $saldo = $objetoConta->obterSaldo(); //obtem-se um novo saldo
+    echo 'Novo saldo da conta é de R$ ' . $saldo . '<br>';
+?>
